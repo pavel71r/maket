@@ -28,7 +28,7 @@ button {
   margin-right: auto;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   gap: 32px 0;
   background: #ffffff;
   box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
