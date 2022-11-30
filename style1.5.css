@@ -121,6 +121,7 @@ a {
     line-height: 24px;
     letter-spacing: -0.2px;
     color: #1b1c21;
+    align-self: start;
   }
   .btn__expand-deg {
     transform: rotate(180deg);
