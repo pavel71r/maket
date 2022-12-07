@@ -1,0 +1,158 @@
+@font-face {
+  font-family: TTLakesRegular;
+  src: url(font/TTLakes-Regular.woff);
+}
+@font-face {
+  font-family: TTLakesMedium;
+  src: url(font/TTLakes-Medium.woff);
+}
+body {
+  margin: 0;
+  background-color: #f8f8f8;
+}
+* {
+  box-sizing: border-box;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+h2 {
+  margin: 0;
+  padding: 0;
+}
+button {
+  border: transparent;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+a {
+  color: #eaeaea;
+}
+.section__heading {
+  padding: 16px;
+  font-family: TTLakesRegular;
+  color: #7e7e82;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+  font-weight: normal;
+  background: linear-gradient(to right, #f8f8f8, #ffffff);
+}
+.swiper::before {
+  content: "";
+  position: absolute;
+  height: 72px;
+  width: 24px;
+  z-index: 2;
+  right: 0;
+  background: linear-gradient(
+    to left,
+    #f8f8f8 0.01%,
+    rgba(248, 248, 248, 0.0001) 100%
+  );
+}
+.swiper-wrapper {
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-bottom: 5px;
+}
+.swiper-slide {
+  width: auto;
+}
+.slide-inner {
+  width: 240px;
+  display: flex;
+  background-color: #ffffff;
+  height: 72px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  border: 1px solid;
+  border-radius: 6px;
+}
+.slide-inner:hover {
+  box-shadow: 0 0 5px gray;
+}
+.swiper-pagination {
+  position: static;
+  padding-top: 11px;
+}
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #dddddd;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background-color: #b5b6bc;
+}
+.btn {
+  display: none;
+}
+.btn__expand {
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .section__heading {
+    padding-left: 24px;
+  }
+  .swiper::before {
+    content: none;
+  }
+  .swiper-wrapper {
+    padding: 5px;
+    gap: 16px 24px;
+    flex-wrap: wrap;
+    max-height: 160px;
+    transition: 0.5s;
+  }
+  .swiper-wrapper-open {
+    max-height: 336px;
+  }
+  .slide-inner {
+    width: 224px;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+  .btn {
+    display: flex;
+    gap: 0 8px;
+    font-family: TTLakesMedium;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1b1c21;
+    align-self: start;
+  }
+  .btn__expand-deg {
+    transform: rotate(180deg);
+  }
+  .section {
+    width: 730px;
+    margin: 0 auto;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+  }
+}
+@media (min-width: 1120px) {
+  .section__heading {
+    padding-left: 32px;
+  }
+  .swiper-wrapper {
+    gap: 16px 32px;
+  }
+  .slide-inner {
+    width: 240px;
+  }
+  .section {
+    width: 1066px;
+  }
+}
