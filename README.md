@@ -5,4 +5,5 @@ https://pavel71r.github.io/maket/index1.3.html <br>
 https://pavel71r.github.io/maket/index1.4.html <br>
 1.5
 https://pavel71r.github.io/maket/index1.5.html
-
+1.6
+https://pavel71r.github.io/1.6-dev/
